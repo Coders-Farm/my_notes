@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/dp_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        style="@style/TextView.Bold.16.Black"
+        android:textColor="@color/secondaryColor"
+        android:text="@string/create_new_note"
+        android:textSize="@dimen/sp_22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:hint="@string/add_title_to_your_note"
+        android:imeOptions="actionNext"
+        android:background="@android:color/transparent"
+        style="@style/TextView.Bold.16.Black"
+        android:textSize="@dimen/sp_16"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/dp_16"
+        android:hint="@string/write_a_note"
+        android:imeOptions="actionNext"
+        android:background="@android:color/transparent"
+        style="@style/TextView.Regular.14.Black"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="none"
+        android:gravity="start"
+        app:layout_constraintBottom_toTopOf="@id/btnAddNote"
+        app:layout_constraintTop_toBottomOf="@id/edTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextView.Bold.16.Black"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:background="@drawable/bg_rounded_8"
+        android:text="@string/add_note"
+        app:layout_goneMarginBottom="@dimen/dp_32"
+        app:layout_constraintBottom_toTopOf="@id/btnDeleteNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDeleteNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        style="@style/TextView.Bold.16.Black"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:background="@drawable/bg_rounded_8"
+        android:backgroundTint="@color/red"
+        android:text="@string/delete_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

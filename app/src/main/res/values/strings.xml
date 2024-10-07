@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="fullname">FullName</string>
+    <string name="e_g_jhon_doe">e.g. Jhon Doe</string>
+    <string name="email">Email</string>
+    <string name="e_g_jhon_gmail_com">e.g. jhon@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="e_g_jhon_123">e.g. Jhon@123</string>
+    <string name="create_account">Create account</string>
+    <string name="login">Login</string>
+    <string name="already_have_an_account_log_in">Already have an account? <font color="#FF8A65">Log In </font></string>
+    <string name="don_t_have_an_account_create_one">Don\'t have an account? <font color="#FF8A65">Create One</font></string>
+    <string name="create_new_note">Create new note</string>
+    <string name="add_title_to_your_note">Add title to your note</string>
+    <string name="write_a_note">Write a note</string>
+    <string name="add_note">Add note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="delete_note">Delete note</string>
+    <string name="please_enter_your_full_name">Please enter your full name</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="please_enter_valid_email">Please enter valid email</string>
+    <string name="password_should_be_8_charters_or_more">Password should be 8 charters or more</string>
+    <string name="please_enter_the_title">Please enter the title</string>
+    <string name="please_enter_the_description">Please enter the description</string>
+    <string name="no_notes_available_please_add_a_new_note">No notes available, please add a new note.</string>
+</resources>

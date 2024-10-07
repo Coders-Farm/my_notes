@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_8"
+    android:elevation="@dimen/dp_8"
+    android:paddingHorizontal="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginStart="@dimen/dp_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvTitle"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_16"
+    tools:text="This is title"
+    style="@style/TextView.Bold.16.Black"
+    android:textColor="@color/white"
+        android:maxLines="1"
+        android:ellipsize="end"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/blue"
+        tools:text="fdjffsdjfsfjndg dfjsfnfgjdg fndsjfnfndngfdjgn \n dfkjdsfjdfdjggdf djdfsjdfsdjhsgdjfggfjdg"
+        android:ellipsize="end"
+        android:maxLines="4"
+        style="@style/TextView.Regular.14.Black"
+        android:layout_marginBottom="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
